@@ -7,6 +7,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.setGlobalPrefix('api');
   app.use('/uploads', express.static('uploads'));
+  app.enableCors()
   const config = new DocumentBuilder()
     .setTitle('Crafty Ways')
     .setDescription('API documentation for crafty ways')
