@@ -44,7 +44,7 @@ import { ImagesModule } from './images/images.module';
       port: 3306,
       username: 'root',
       password: 'root',
-      database: 'craft_ways_db',
+      database: 'crafty_ways_db',
       synchronize: true,
       logging: false,
       entities: ['dist/**/*.entity{.ts,.js}'],
