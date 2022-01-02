@@ -23,13 +23,28 @@ import { ImagesModule } from './images/images.module';
     //   entities: ['dist/**/*.entity{.ts,.js}'],
     //   migrations: ['src/migrations/**/*.ts'],
     // }
+
+    // RDS Config
+    //   {
+    //   type: 'mysql',
+    //   host: 'craftywaysdb.cbmemndkpzaq.eu-west-1.rds.amazonaws.com',
+    //   port: 3306,
+    //   username: 'root',
+    //   password: 'craftywaysdb',
+    //   database: 'craftywaysdb',
+    //   synchronize: true,
+    //   logging: false,
+    //   entities: ['dist/**/*.entity{.ts,.js}'],
+    //   migrations: ['src/migrations/**/*.ts'],
+    // }
+
       {
-      type: 'mysql',
-      host: 'craftywaysdb.cbmemndkpzaq.eu-west-1.rds.amazonaws.com',
+      type: 'mariadb',
+      host: 'localhost',
       port: 3306,
       username: 'root',
-      password: 'craftywaysdb',
-      database: 'craftywaysdb',
+      password: 'root',
+      database: 'craft_ways_db',
       synchronize: true,
       logging: false,
       entities: ['dist/**/*.entity{.ts,.js}'],
